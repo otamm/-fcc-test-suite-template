@@ -1,0 +1,7 @@
+#main {
+
+}
+
+#main > * {
+  align-content: center;
+}
