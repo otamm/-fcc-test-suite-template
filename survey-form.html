@@ -2,25 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="css/survey-form.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
   </head>
 
-  <body>
+  <body id="main">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+  <div id="wrapper">
+    <h1 id="title">Survey Survey</h1>
+    <p id="description">How many surveys do you take each week?</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label><br>
+      <input id="name" type="text" placeholder="Enter your name" required><br>
+      <label id="email-label" for="email">E-mail:</label><br>
+      <input id="email" type="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" required><br>
+      <label id="number-label" for="email">Surveys taken weekly:</label><br>
+      <input id="number" type="number" pattern="[0-7]" min="0" max="7" placeholder="How many days a week do you take surveys?" required><br>
+      <label id="rating-label" for="rating">Please rate this survey so far:</label><br>
+      <select class="form" id="dropdown">
+          <option><a href="">Excellent</a></option>
+          <option><a href="">Terrific</a></option>
+          <option><a href="">Very Good</a></option>
+      </select><br>
+      <label>Do you take surveys as a hobby?</label><br>
+          <label for="hobby">Yes</label> <input type="radio" name="hobby" id="radio-yes" value="y" checked="checked" />
+          <label for="hobby">No</label> <input type="radio" name="hobby" id="radio-no" value="n" /><br>
+      <label>What kind of surveys do you usually take?</label><br>
+                 <label for="chkEggs">Politics</label>
+                 <input type="checkbox" value="pol" />
+                 <label for="chkEggs">Electronics</label>
+                 <input type="checkbox" value="ele" />
+                 <label for="chkEggs">Games</label>
+                 <input type="checkbox" value="ga" /><br>
+      <label id="comment-label" for="comments">Any Comments?</label><br>
+      <textarea rows="10" cols="10">None
+      </textarea><br>
+      <input class="btn btn-primary" id="submit" type="submit" value="Submit">
+    </form>
+  </div>
     <script  src="js/survey-form.js"></script>
+    <script  src="js/bootstrap.min.js"></script>
   </body>
 </html>
