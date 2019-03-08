@@ -36,6 +36,7 @@ ul {
  body {
    display: flex;
    font-family: "roboto";
+   margin-bottom: 200px;
  }
  section {
    margin: auto;
