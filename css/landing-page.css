@@ -2,6 +2,10 @@
 #header-img {
   width:200px;
 }
+* {
+  align-content: center;
+  text-align: center;
+}
 ul {
   list-style: none;
 }
@@ -11,6 +15,7 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
+  margin-bottom: 40;
 }
 
 /* Style the links inside the navigation bar */
@@ -38,18 +43,21 @@ ul {
 #content {
   display: flex;
   -webkit-flex: 1; /* Safari 6.1+ */
+  position: absolute;
+  margin-top: 100px;
+  padding-top: 100px;
 }
 
 @media only screen and (min-width : 768px) {
-  #video {
-    width: 560px;
-    height: 315px;
+  .video {
+    width: 400px;
+    height: 200px;
   }
 }
 
 @media only screen and (max-width : 767px) {
-  #video {
-    width: 400px;
-    height: 200px;
+  .video {
+    width: 200px;
+    height: 100px;
   }
 }

@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8">
     <title>Landing Page</title>
+    <style>
+    #content {
+      display: flex;
+      -webkit-flex: 1; /* Safari 6.1+ */
+    }
+
+    @media only screen and (min-width : 768px) {
+      .video {
+        width: 560px;
+        height: 315px;
+      }
+    }
+
+    @media only screen and (max-width : 767px) {
+      .video {
+        width: 400px;
+        height: 200px;
+      }
+    }
+    </style>
     <link rel="stylesheet" href="css/landing-page.css">
   </head>
 
@@ -22,10 +42,12 @@
     </header>
     <div id="content">
       <section id="features">
-        <iframe id="video" src="https://www.youtube.com/embed/v1Q_Cr6M1Ms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="video" class="video" src="https://www.youtube.com/embed/v1Q_Cr6M1Ms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </section>
       <section id="howdoesitwork">
         <!--iframe width="560" height="315" src="https://www.youtube.com/embed/v1Q_Cr6M1Ms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen--></iframe>
+        <p><h2>Lo-Fi Generator!</h2></p>
+        <iframe class="video" src="https://www.youtube.com/embed/nPf6Q5a9tcw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </section>
       <section id="contact">
         <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
