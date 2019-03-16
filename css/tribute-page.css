@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #main {
 margin: -20px;
 }
@@ -43,3 +44,51 @@ margin: -20px;
     width: 100%;
   }
 }
+=======
+#main {
+margin: -20px;
+
+}
+#title {
+  width: 100%;
+  height: 100px;
+  padding-top: 50px;
+  background: #ffb;
+  text-align: center;
+}
+#img-div {
+  align-content: center;
+  text-align: center;
+  display: block;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  resize: inherit;
+  display: block;
+  margin: auto;
+}
+
+#img-caption {
+  font-style: italic;
+}
+
+#tribute-link {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="fill"] {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  /* For mobile phones: */
+  [class*="fill"] {
+    width: 100%;
+  }
+}
+>>>>>>> 5504031deb00f77bbea4866152a5769c5740d54b

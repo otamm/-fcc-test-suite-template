@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #main {
   background-color: white;
   color: black;
@@ -43,3 +44,12 @@ input:hover {
     width: 75%;
   }
 }
+=======
+#main {
+
+}
+
+#main > * {
+  align-content: center;
+}
+>>>>>>> 5504031deb00f77bbea4866152a5769c5740d54b
